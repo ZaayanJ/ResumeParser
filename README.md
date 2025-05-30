@@ -28,16 +28,20 @@ An AI-powered resume parser that extracts structured candidate data from `.pdf` 
 
 ```
 ResumeParser/
-├── backend/
-│   ├── app.py               # Flask app
-│   ├── parser.py            # spaCy-based resume parser
-│   └── utils.py             # Helpers for file handling
-├── templates/
-│   └── index.html           # Frontend upload form
-├── static/
-│   └── style.css            # (Optional: Extracted CSS)
-└── README.md
+├── app.py                    # Main Flask application
+├── parsed_output/            # Folder for storing parsed resume results
+├── resume-parser-env/        # Python virtual environment (exclude from Git)
+│   ├── Include/
+│   ├── Lib/
+│   ├── Scripts/
+│   └── pyvenv.cfg
+├── templates/                # HTML templates for Flask
+│   ├── index.html            # Upload form
+│   └── results.html          # Display parsed resume results
+├── uploads/                  # Folder where uploaded resumes are temporarily stored
+└── README.md                 # Project documentation
 ```
+
 ## 💡 How It Works
 
 1. User uploads a resume via the UI  
