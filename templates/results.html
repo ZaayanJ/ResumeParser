@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Parsing Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #333;
+        }
+        .container {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 90%;
+            max-width: 600px;
+        }
+        h1 {
+            color: #007BFF;
+        }
+        h2 {
+            margin-top: 20px;
+            color: #0056b3;
+        }
+        pre {
+            background-color: #f7f7f7;
+            padding: 10px;
+            border-radius: 5px;
+            overflow: auto;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Resume Parsed Successfully!</h1>
+        
+        <h2>Personal Details</h2>
+        <pre>Name: {{ parsed_data['Name'] }}</pre>
+        <pre>Email: {{ parsed_data['Email'] }}</pre>
+        <pre>Phone: {{ parsed_data['Phone'] }}</pre>
+        <pre>Location: {{ parsed_data['Location'] }}</pre>
+
+        {% if parsed_data['Most Recent Experience'] %}
+            <h2>Most Recent Experience</h2>
+            <pre>Position: {{ parsed_data['Most Recent Experience']['Position'] }}</pre>
+            <pre>Company: {{ parsed_data['Most Recent Experience']['Company'] }}</pre>
+            <pre>Description: {{ parsed_data['Most Recent Experience']['Description'] }}</pre>
+        {% else %}
+            <h2>No Recent Experience Found</h2>
+        {% endif %}
+
+        <a href="/" style="text-decoration: none;">
+            <button>Upload Another Resume</button>
+        </a>
+    </div>
+</body>
+</html>
