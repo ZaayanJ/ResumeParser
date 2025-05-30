@@ -6,12 +6,12 @@ An AI-powered resume parser that extracts structured candidate data from `.pdf` 
 
 ## 🚀 Features
 
-- 🤖 **AI Resume Parsing** with Python + spaCy NLP
-- ⚙️ **Flask Backend** for processing uploads and serving predictions
-- 📂 **File Upload UI** for `.pdf` and `.docx` resumes
-- 📊 85%+ extraction accuracy on real-world resume formats
-- ⚡ Reduces manual resume review time by 75%
-- 🌐 Responsive frontend with animated progress bar and modern UX
+- 🤖 **AI Resume Parsing** with Python + spaCy NLP  
+- ⚙️ **Flask Backend** for processing uploads and serving predictions  
+- 📂 **File Upload UI** for `.pdf` and `.docx` resumes  
+- 📊 85%+ extraction accuracy on real-world resume formats  
+- ⚡ Reduces manual resume review time by 75%  
+- 🌐 Responsive frontend with animated progress bar and modern UX  
 
 ---
 
@@ -24,59 +24,28 @@ An AI-powered resume parser that extracts structured candidate data from `.pdf` 
 | **NLP**     | spaCy (custom NER pipeline)   |
 | **Parsing** | PDFMiner, python-docx         |
 
----
-
 ## 📁 Project Structure
 
+```
 ResumeParser/
 ├── backend/
-│ ├── app.py # Flask app
-│ ├── parser.py # spaCy-based resume parser
-│ └── utils.py # Helpers for file handling
+│   ├── app.py               # Flask app
+│   ├── parser.py            # spaCy-based resume parser
+│   └── utils.py             # Helpers for file handling
 ├── templates/
-│ └── index.html # Frontend upload form
+│   └── index.html           # Frontend upload form
 ├── static/
-│ └── style.css # (Optional: Extracted CSS)
+│   └── style.css            # (Optional: Extracted CSS)
 └── README.md
-
-yaml
-Copy
-Edit
-
----
-
+```
 ## 💡 How It Works
 
-1. User uploads a resume via the UI
-2. Flask receives the file and extracts text
-3. spaCy NLP model parses and tags entities (Name, Email, Skills, etc.)
-4. Parsed output is returned as structured JSON or HTML view
+1. User uploads a resume via the UI  
+2. Flask receives the file and extracts text  
+3. spaCy NLP model parses and tags entities (Name, Email, Skills, etc.)  
+4. Parsed output is returned as structured JSON or HTML view  
 
 ---
-
-## ⚙️ Setup Instructions
-
-### 1. Clone the repo
-```bash
-git clone https://github.com/ZaayanJ/ResumeParser.git
-cd ResumeParser
-2. Create a virtual environment
-bash
-Copy
-Edit
-python -m venv resume-parser-env
-source resume-parser-env/bin/activate  # Windows: resume-parser-env\Scripts\activate
-3. Install dependencies
-bash
-Copy
-Edit
-pip install -r requirements.txt
-4. Run the Flask app
-bash
-Copy
-Edit
-python backend/app.py
-Then visit http://localhost:5000 in your browser.
 
 ✨ Sample Output
 json
@@ -104,4 +73,3 @@ Zaayan Javed
 💼 LinkedIn
 
 💻 GitHub
-
