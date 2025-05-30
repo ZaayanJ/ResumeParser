@@ -11,7 +11,7 @@ An AI-powered resume parser that extracts structured candidate data from `.pdf` 
 - 📂 **File Upload UI** for `.pdf` and `.docx` resumes  
 - 📊 85%+ extraction accuracy on real-world resume formats  
 - ⚡ Reduces manual resume review time by 75%  
-- 🌐 Responsive frontend with animated progress bar and modern UX  
+- 🌐 Responsive frontend with modern UX  
 
 ---
 
