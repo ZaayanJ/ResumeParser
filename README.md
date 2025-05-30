@@ -58,6 +58,7 @@ Edit
   "education": "M.Sc. in Computer Science",
   "experience": "2 years at ABC Corp"
 }
+
 🔭 Future Improvements
 Add LinkedIn/GitHub scraping for profile enrichment
 
